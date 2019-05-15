@@ -7,14 +7,14 @@ body {
 /* Heading Size 1 */
 
 h1 {
-    font-size: 200%;
+    font-size: 140%;
     font-weight: bold;
 }
 
 /* Heading Size 2 */
 
 h2 {
-    font-size: 140%;
+    font-size: 120%;
     font-weight: bold;
 }
 
@@ -39,25 +39,37 @@ h2 {
     font-size: 150%;
 }
 
-/* Row / Col for our random Number & Win/Losses */
+/* Rows / Cols for our random Number & Win/Losses */
+
+/* Default Row */
 
 .row {
     display: flex;
     width: 25%;
 }
 
-/* With style for our two sections */
-.col-green {
+/* Default column */
+
+.col {
     flex: 1;
+}
+
+/* Style for our section & aside */
+
+.col-green {
+    flex: 3;
     background-color: #53c987 !important;
     padding: 10px;
     margin-right: 1%;
-    float: left;
 }
+
 .col-cyan {
     flex: 1;
     background-color: #3bfefb;
     padding: 10px;
     margin-right: 1%;
-    float: left;
+}
+
+#randomNumber {
+    font-size: 250%;
 }
