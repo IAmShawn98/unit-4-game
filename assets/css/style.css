@@ -4,15 +4,17 @@ body {
     margin-left: 1%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 180%;
-    font-weight: bold;
-}
+/* Heading Size 1 */
+h1 {font-size: 200%; font-weight: bold;}
+
+/* Heading Size 2 */
+h2 {font-size: 140%; font-weight: bold;}
+
 
 #gameBrand {
     background-color: #cb6f34;
     color: #ffffff;
-    width: 20%;
+    width: 14%;
     padding: 30px;
 }
 
