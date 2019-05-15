@@ -5,11 +5,18 @@ body {
 }
 
 /* Heading Size 1 */
-h1 {font-size: 200%; font-weight: bold;}
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+}
 
 /* Heading Size 2 */
-h2 {font-size: 140%; font-weight: bold;}
 
+h2 {
+    font-size: 140%;
+    font-weight: bold;
+}
 
 #gameBrand {
     background-color: #cb6f34;
@@ -32,4 +39,25 @@ h2 {font-size: 140%; font-weight: bold;}
     font-size: 150%;
 }
 
+/* Row / Col for our random Number & Win/Losses */
 
+.row {
+    display: flex;
+    width: 25%;
+}
+
+/* With style for our two sections */
+.col-green {
+    flex: 1;
+    background-color: #53c987 !important;
+    padding: 10px;
+    margin-right: 1%;
+    float: left;
+}
+.col-cyan {
+    flex: 1;
+    background-color: #3bfefb;
+    padding: 10px;
+    margin-right: 1%;
+    float: left;
+}
