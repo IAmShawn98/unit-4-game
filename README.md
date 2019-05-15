@@ -1,2 +1,6 @@
-# unit-4-game
-In Crystal Collector, your job is to click on any of the 4 crystals displayed on your screen. Each of the 4 crystals has a set value to them, and you must gather points to match the random number in the green box. Good luck!
+<h1>The CrystalsCollector Game!</h1>
+
+<p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you
+will add a specific amount of points to your total score. You win the game by matching your total score to the random
+number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you
+until you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
