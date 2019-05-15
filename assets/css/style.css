@@ -18,6 +18,10 @@ h2 {
     font-weight: bold;
 }
 
+p {
+    font-size: 90%;
+}
+
 #gameBrand {
     background-color: #cb6f34;
     color: #ffffff;
@@ -57,9 +61,10 @@ h2 {
 /* Style for our section & aside */
 
 .col-green {
-    flex: 3;
+    flex: 2;
     background-color: #53c987 !important;
     padding: 10px;
+    height: 80px;
     margin-right: 1%;
 }
 
