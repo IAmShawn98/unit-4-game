@@ -1,0 +1,33 @@
+body {
+    background: url("../images/background.jpg");
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 180%;
+    font-weight: bold;
+}
+
+#gameBrand {
+    background-color: #cb6f34;
+    color: #ffffff;
+    width: 20%;
+    padding: 30px;
+}
+
+.container {
+    margin-top: 1%;
+}
+
+/* About CrystalsCollector! */
+
+#mainExplain {
+    background-color: #fbe6cf;
+    color: #228B22;
+    width: 30%;
+    padding: 30px;
+    font-size: 150%;
+}
+
+
