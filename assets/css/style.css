@@ -25,7 +25,7 @@ p {
 #gameBrand {
     background-color: #cb6f34;
     color: #ffffff;
-    width: 14%;
+    width: 10%;
     padding: 30px;
 }
 
@@ -77,4 +77,14 @@ p {
 
 #randomNumber {
     font-size: 250%;
+}
+
+.totalScore {
+    background-color: #1fa395;
+    color: #ffffff;
+    width: 10%;
+    padding: 5px;
+}
+#playerTotalScore {
+    height: 40%;
 }
