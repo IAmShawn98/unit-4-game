@@ -19,17 +19,15 @@ $(document).ready(function () {
 
     // 2.) Generate a random number.
 
-    // Our Static Number Index.
-    var numIndex = ["28", "38", "48", "98"];
     // Set a variable that holds our random values.
-    var randomNumbz = numIndex[Math.floor(Math.random() * numIndex.length)];
+    var randomNumbz = Math.floor(Math.random() * 19) + 120;
     // Populate our 'randomNumbz' to the 'randomNumber' display in HTML.
     randomNumber.text(randomNumbz);
 
 
     // 3.) When the player clicks on any of the four crystals, increment the 'playerTotalScore'.
 
-    
+
 
 
 
