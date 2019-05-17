@@ -1,9 +1,10 @@
-// Run when the DOM is ready.
 $(document).ready(function () {
 
-    // 1.) Grab our DOM values for later population.
+    // 1.) Set default game stats and call our important DOM elements for later population.
 
     // Global Variables.
+
+    // Declare Our Game Stats.
     var wins = 0;
     var losses = 0;
     var playerTotalScore = 0;
@@ -14,9 +15,11 @@ $(document).ready(function () {
     var yellowCrystalValue = Math.floor(Math.random() * 15) + 1;
     var greenCrystalValue = Math.floor(Math.random() * 20) + 1;
 
+    // Holds our random number for player to guess.
+    var randomNumbz = Math.floor(Math.random() * 19) + 120;
 
     // DOM Values (For later population).
-    
+
     // Random Number ID.
     var randomNumber = $("#randomNumber");
     // Win Counter ID.
@@ -28,8 +31,6 @@ $(document).ready(function () {
 
     // 2.) Generate a random number.
 
-    // Set a variable that holds our random values.
-    var randomNumbz = Math.floor(Math.random() * 19) + 120;
     // Populate our 'randomNumbz' to the 'randomNumber' display in HTML.
     randomNumber.text(randomNumbz);
 
@@ -53,6 +54,9 @@ $(document).ready(function () {
     $("#cGreen").on("click", function () {
         $('#totalPlayerScore').text(greenCrystalValue);
     });
+
+    // Total each crystal click so the player is able to add-up to the random number displayed.
+
 
 
 
