@@ -8,6 +8,15 @@ $(document).ready(function () {
     var losses = 0;
     var playerTotalScore = 0;
 
+    // Random Crystal Values.
+    var redCrystalValue = Math.floor(Math.random() * 25) + 1;
+    var blueCrystalValue = Math.floor(Math.random() * 12) + 1;
+    var yellowCrystalValue = Math.floor(Math.random() * 15) + 1;
+    var greenCrystalValue = Math.floor(Math.random() * 20) + 1;
+
+
+    // DOM Values (For later population).
+    
     // Random Number ID.
     var randomNumber = $("#randomNumber");
     // Win Counter ID.
@@ -24,10 +33,26 @@ $(document).ready(function () {
     // Populate our 'randomNumbz' to the 'randomNumber' display in HTML.
     randomNumber.text(randomNumbz);
 
-
     // 3.) When the player clicks on any of the four crystals, increment the 'playerTotalScore'.
 
+    // Generate a random value for each crystal.
 
+    // Red Crstal.
+    $("#cRed").on("click", function () {
+        $('#totalPlayerScore').text(redCrystalValue);
+    });
+    // Blue Crystal.
+    $("#cBlue").on("click", function () {
+        $('#totalPlayerScore').text(blueCrystalValue);
+    });
+    // Yellow Crystal.
+    $("#cYellow").on("click", function () {
+        $('#totalPlayerScore').text(yellowCrystalValue);
+    });
+    // Green Crystal.
+    $("#cGreen").on("click", function () {
+        $('#totalPlayerScore').text(greenCrystalValue);
+    });
 
 
 

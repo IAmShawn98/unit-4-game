@@ -90,3 +90,8 @@ p {
 #playerTotalScore {
     height: 40%;
 }
+
+/* Crystal Effects */
+#cRed, #cBlue, #cYellow, #cGreen {
+    cursor: pointer;
+}
