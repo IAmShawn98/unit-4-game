@@ -95,3 +95,31 @@ p {
 #cRed, #cBlue, #cYellow, #cGreen {
     cursor: pointer;
 }
+
+#cRed {
+    background: url("../images/crystals/red.png") no-repeat;
+    border: none;
+    width: 65px;
+    height: 65px;
+}
+#cBlue {
+    background: url("../images/crystals/blue.png") no-repeat;
+    border: none;
+    width: 65px;
+    height: 65px;
+}
+#cYellow {
+    background: url("../images/crystals/yellow.png") no-repeat;
+    border: none;
+    width: 65px;
+    height: 65px;
+}
+#cGreen {
+    background: url("../images/crystals/green.png") no-repeat;
+    border: none;
+    width: 65px;
+    height: 65px;
+}
+
+
+

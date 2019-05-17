@@ -9,14 +9,16 @@ $(document).ready(function () {
     var losses = 0;
     var playerTotalScore = 0;
 
-    // Random Crystal Values.
-    var redCrystalValue = Math.floor(Math.random() * 25) + 1;
-    var blueCrystalValue = Math.floor(Math.random() * 12) + 1;
-    var yellowCrystalValue = Math.floor(Math.random() * 15) + 1;
-    var greenCrystalValue = Math.floor(Math.random() * 20) + 1;
-
     // Holds our random number for player to guess.
-    var randomNumbz = Math.floor(Math.random() * 19) + 120;
+    var randomNumbz = Math.floor(Math.random() * 120) + 19;
+
+    // Random Crystal Values.
+    var redCrystalValue = Math.floor(Math.random() * 18) + 1;
+    var blueCrystalValue = Math.floor(Math.random() * 12) + 1;
+    var yellowCrystalValue = Math.floor(Math.random() * 12) + 1;
+    var greenCrystalValue = Math.floor(Math.random() * 12) + 1;
+
+
 
     // DOM Values (For later population).
 
@@ -27,7 +29,7 @@ $(document).ready(function () {
     // Loss Counter ID.
     var lossCounter = $("#lossCounter");
     // Player Total Score ID.
-    var playerTotalScore = $("#playerTotalScore");
+    var totalPlayerScore = $("#totalPlayerScore");
 
     // 2.) Generate a random number.
 
@@ -38,28 +40,16 @@ $(document).ready(function () {
 
     // Generate a random value for each crystal.
 
-    // Red Crstal.
-    $("#cRed").on("click", function () {
-        $('#totalPlayerScore').text(redCrystalValue);
-    });
-    // Blue Crystal.
-    $("#cBlue").on("click", function () {
-        $('#totalPlayerScore').text(blueCrystalValue);
-    });
-    // Yellow Crystal.
-    $("#cYellow").on("click", function () {
-        $('#totalPlayerScore').text(yellowCrystalValue);
-    });
-    // Green Crystal.
-    $("#cGreen").on("click", function () {
-        $('#totalPlayerScore').text(greenCrystalValue);
+    // Total Points.
+    var theTotal = 0;
+    // When the player clicks a button, read each value and output the total points.
+    $('button').click(function () {
+        theTotal = Number(theTotal) + Number($(this).val());
+        $('#totalPlayerScore').text("Total: " + theTotal);
     });
 
-    // Total each crystal click so the player is able to add-up to the random number displayed.
-
-
-
-
+    // Populates the total from the four crystals.
+    $('#totalPlayerScore').text("Total: " + theTotal);
 
     // 4.) If the value of the players total score matches the 'randomNumber' displayed, add a win.
     // 4.2 Otherwise, if the value surpasses the limit of the 'randomNumber', add a loss.
