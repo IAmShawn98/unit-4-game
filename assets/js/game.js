@@ -10,11 +10,12 @@ $(document).ready(function () {
 
     // Holds the random number for player to guess.
     var randomNumbz = Math.floor(Math.random() * 120) + 19;
-
-    // DOM Values (For later population).
-
+    
     // Random Number ID.
     var randomNumber = $("#randomNumber");
+
+    // Randomize the crystal values.
+    $("button").val(Math.floor(Math.random() * 12) + 1);
 
     // Generate a random number.
 
