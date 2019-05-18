@@ -45,6 +45,11 @@ p {
     font-size: 150%;
 }
 
+/* Bold Style */
+b {
+    font-weight: bold;
+}
+
 /* Rows / Cols for our random Number & Win/Losses */
 
 /* Default Row */

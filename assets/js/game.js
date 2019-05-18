@@ -33,13 +33,17 @@ $(document).ready(function () {
         if (randomNumbz === playerTotalScore) {
             wins++;
             $('#winCounter').text(wins);
+            alert("You Won!!!!!!!");
             playerTotalScore = 0;
+            randomNumbz = Math.floor(Math.random() * 120) + 19;
 
             // 4.2 Otherwise, if the value surpasses the limit of the 'randomNumber', add a loss.
         } else if (playerTotalScore > randomNumbz) {
             $('#lossCounter').text(losses);
+            alert("You lost, try again!");
             losses++;
             playerTotalScore = 0;
+            randomNumbz = Math.floor(Math.random() * 120) + 19;
         }
         // Populate page with total score.
         $('#totalPlayerScore').text(playerTotalScore);
