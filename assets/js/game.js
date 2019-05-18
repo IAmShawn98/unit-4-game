@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-    // 1.) Set default game stats and call our important DOM elements for later population.
+    // Set default game stats and call our important DOM elements for later population.
 
     // Global Variables.
 
@@ -17,33 +16,41 @@ $(document).ready(function () {
     // Random Number ID.
     var randomNumber = $("#randomNumber");
 
-    // 2.) Generate a random number.
+    // Generate a random number.
 
     // Populate our 'randomNumbz' to the 'randomNumber' display in HTML.
     randomNumber.text(randomNumbz);
 
-    // 3.) When the player clicks on any of the four crystals, increment the 'playerTotalScore'.
+    // When the player clicks on any of the four crystals, increment the 'playerTotalScore'.
 
-    // Crystal Buttons.
+    // Crystals Click Listener.
     $('button').click(function () {
         // Update our total score  to equal our new value.
         playerTotalScore = Number($(this).val()) + Number(playerTotalScore);
 
-        // 4.) If the value of the players total score matches the 'randomNumber' displayed, add a win.
+        // If the value of the players total score matches the 'randomNumber' displayed, add a win.
         if (randomNumbz === playerTotalScore) {
-            wins++;
-            $('#winCounter').text(wins);
+            // Alert the player of their victory.
             alert("You Won!!!!!!!");
+            // Increment Win Counter.
+            $('#winCounter').text(wins);
+            wins++;
+            // Start new game, clean player status and generate a new number to match.
             playerTotalScore = 0;
             randomNumbz = Math.floor(Math.random() * 120) + 19;
+            randomNumber.text(randomNumbz);
 
-        // 4.2 Otherwise, if the value surpasses the limit of the 'randomNumber', add a loss.
+            // If the value surpasses the limit of the 'randomNumber', add a loss.
         } else if (playerTotalScore > randomNumbz) {
-            $('#lossCounter').text(losses);
+            // Alert the player of their loss.
             alert("You lost, try again!");
+            // Increment the loss counter.
+            $('#lossCounter').text(losses);
             losses++;
+            // Start new game, clean player status and generate a new number to match.
             playerTotalScore = 0;
             randomNumbz = Math.floor(Math.random() * 120) + 19;
+            randomNumber.text(randomNumbz);
         }
         // Populate page with total score.
         $('#totalPlayerScore').text(playerTotalScore);
