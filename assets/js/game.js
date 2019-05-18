@@ -26,8 +26,8 @@ $(document).ready(function () {
 
     // Crystal Buttons.
     $('button').click(function () {
-        // Update our total var to equal our new value.
-        playerTotalScore = Number(playerTotalScore) + Number($(this).val());
+        // Update our total score  to equal our new value.
+        playerTotalScore = Number($(this).val()) + Number(playerTotalScore);
 
         // 4.) If the value of the players total score matches the 'randomNumber' displayed, add a win.
         if (randomNumbz === playerTotalScore) {
@@ -37,7 +37,7 @@ $(document).ready(function () {
             playerTotalScore = 0;
             randomNumbz = Math.floor(Math.random() * 120) + 19;
 
-            // 4.2 Otherwise, if the value surpasses the limit of the 'randomNumber', add a loss.
+        // 4.2 Otherwise, if the value surpasses the limit of the 'randomNumber', add a loss.
         } else if (playerTotalScore > randomNumbz) {
             $('#lossCounter').text(losses);
             alert("You lost, try again!");
@@ -48,8 +48,4 @@ $(document).ready(function () {
         // Populate page with total score.
         $('#totalPlayerScore').text(playerTotalScore);
     });
-
-    // Populates the total from the four crystals.
-    $('#totalPlayerScore').text(playerTotalScore);
-    playerTotalScore = Number(playerTotalScore) + Number($(this).val());
 });
